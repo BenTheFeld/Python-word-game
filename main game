@@ -9,13 +9,13 @@ while 1 == 1:
             print("you are in the living room")
             print("you see a window north and a door east")
         if action == "go north":
-            print("you see a window")
+            print("you approach the window")
         if action == "go south":
             print("you don't see anything remarkable")
         if action == "go west":
             print("you don't see anything remarkable")
         if action == "go east":
-            print("you see a door")
+            print("you approach a door")
             action = str(input("do you open the door? "))
             if action == "yes":
                 print("you open the door and enter the kitchen")
@@ -25,15 +25,29 @@ while 1 == 1:
             
     if location == "kitchen":
         if action == "look around":
-            print("")
+            print("you are in the kitchen")
+            print("you see a door west, a door south and the kitchen counter north")
         if action == "go north":
-            print("")
+            print("you approach the kitchen counter")
+            action = str(input("do you search the counter? "))
+            if action == "yes":
+                print("you find a key")
+                pocket.append("key")
+            else: 
+                print("you don't search the kitchen counter")
         if action == "go south":
-            print("")
+            print("you approach a door")
+            
         if action == "go west":
-            print("")
+            print("you approach a door")
+            action = str(input("do you open the door? "))
+            if action == "yes":
+                print("you open the door and enter the living room")
+                location = "living room"
+            elif action == "no":
+                print("you don't open the door")
         if action == "go east":
-            print("")
+            print("you don't see anything remarkable")
             
     if location == "basement":
         if action == "look around":
