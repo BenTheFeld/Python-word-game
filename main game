@@ -6,21 +6,36 @@ while 1 == 1:
     action = str(input("what do you do? "))
     if location == "living room":
         if action == "look around":
+            print("")
         if action == "go north":
+            print("")
         if action == "go south":
+            print("")
         if action == "go west":
+            print("")
         if action == "go east":
+            print("")
+            
     if location == "kitchen":
         if action == "look around":
+            print("")
         if action == "go north":
+            print("")
         if action == "go south":
+            print("")
         if action == "go west":
+            print("")
         if action == "go east":
+            print("")
+            
     if location == "basement":
         if action == "look around":
+            print("")
         if action == "go north":
+            print("")
         if action == "go south":
+            print("")
         if action == "go west":
-        if action == "go east":location = "living room"
-action = "look around"
-pocket = []
+            print("")
+        if action == "go east":
+            print("")
