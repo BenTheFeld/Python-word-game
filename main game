@@ -1,0 +1,26 @@
+location = "living room"
+action = "look around"
+pocket = []
+
+while 1 == 1:
+    action = str(input("what do you do? "))
+    if location == "living room":
+        if action == "look around":
+        if action == "go north":
+        if action == "go south":
+        if action == "go west":
+        if action == "go east":
+    if location == "kitchen":
+        if action == "look around":
+        if action == "go north":
+        if action == "go south":
+        if action == "go west":
+        if action == "go east":
+    if location == "basement":
+        if action == "look around":
+        if action == "go north":
+        if action == "go south":
+        if action == "go west":
+        if action == "go east":location = "living room"
+action = "look around"
+pocket = []
