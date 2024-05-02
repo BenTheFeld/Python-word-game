@@ -20,7 +20,7 @@ while 1 == 1:
             print("you don't see anything remarkable")
             
         if action == "go east":
-            print("you approach a door")
+            print("you approach the door to the kitchen")
             action = str(input("do you open the door? "))
             
             if action == "yes":
@@ -45,15 +45,19 @@ while 1 == 1:
                 print("you don't search the kitchen counter")
                 
         if action == "go south":
-            print("you approach a door")
+            print("you approach the door to the basement ")
             action = str(input("do you open the door? "))
             if action == "yes":
-                print("the door is locked")
+                if "key" in pocket:
+                    print("you open the door with the key and enter the basement")
+                    location = "basement"
+                else: 
+                    print("the door is locked")
             elif action == "no":
                 print("you don't open the door")
                 
         if action == "go west":
-            print("you approach a door")
+            print("you approach the door to the living room ")
             action = str(input("do you open the door? "))
             if action == "yes":
                 print("you open the door and enter the living room")
