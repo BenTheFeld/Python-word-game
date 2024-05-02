@@ -5,18 +5,24 @@ pocket = []
 while 1 == 1:
     action = str(input("what do you do? "))
     if location == "living room":
+        
         if action == "look around":
             print("you are in the living room")
             print("you see a window north and a door east")
+            
         if action == "go north":
             print("you approach the window")
+            
         if action == "go south":
             print("you don't see anything remarkable")
+            
         if action == "go west":
             print("you don't see anything remarkable")
+            
         if action == "go east":
             print("you approach a door")
             action = str(input("do you open the door? "))
+            
             if action == "yes":
                 print("you open the door and enter the kitchen")
                 location = "kitchen"
@@ -24,20 +30,28 @@ while 1 == 1:
                 print("you don't open the door")
             
     if location == "kitchen":
+        
         if action == "look around":
             print("you are in the kitchen")
             print("you see a door west, a door south and the kitchen counter north")
+            
         if action == "go north":
             print("you approach the kitchen counter")
             action = str(input("do you search the counter? "))
             if action == "yes":
                 print("you find a key")
                 pocket.append("key")
-            else: 
+            elif action == "no":
                 print("you don't search the kitchen counter")
+                
         if action == "go south":
             print("you approach a door")
-            
+            action = str(input("do you open the door? "))
+            if action == "yes":
+                print("the door is locked")
+            elif action == "no":
+                print("you don't open the door")
+                
         if action == "go west":
             print("you approach a door")
             action = str(input("do you open the door? "))
@@ -46,10 +60,12 @@ while 1 == 1:
                 location = "living room"
             elif action == "no":
                 print("you don't open the door")
+                
         if action == "go east":
             print("you don't see anything remarkable")
             
     if location == "basement":
+        
         if action == "look around":
             print("")
         if action == "go north":
