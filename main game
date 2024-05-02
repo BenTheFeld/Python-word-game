@@ -6,15 +6,22 @@ while 1 == 1:
     action = str(input("what do you do? "))
     if location == "living room":
         if action == "look around":
-            print("")
+            print("you are in the living room")
+            print("you see a window north and a door east")
         if action == "go north":
-            print("")
+            print("you see a window")
         if action == "go south":
-            print("")
+            print("you don't see anything remarkable")
         if action == "go west":
-            print("")
+            print("you don't see anything remarkable")
         if action == "go east":
-            print("")
+            print("you see a door")
+            action = str(input("do you open the door? "))
+            if action == "yes":
+                print("you open the door and enter the kitchen")
+                location = "kitchen"
+            elif action == "no":
+                print("you don't open the door")
             
     if location == "kitchen":
         if action == "look around":
